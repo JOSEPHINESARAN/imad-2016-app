@@ -7,11 +7,11 @@ app.use(morgan('combined'));
 
 
 var articles = {
-         articleOne = {}
-            title:'Article-One josephine',
-            heading:'Article One',
-            date:'Sep 5, 2016',
-            content:  
+  articleOne : {
+       title:'Article-One josephine',
+       heading:'Article One',
+       date:'Sep 5, 2016',
+       content:  
                `<p>
                     This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,
                </p>
@@ -26,7 +26,32 @@ var articles = {
                            webapp from IIT madras,This is the content for the first article. Its more intere
               </p>`
     },
-
+  articleTwo : {
+       title:'Article-Two josephine',
+       heading:'Article Two',
+       date:'Sep 10, 2016',
+       content:  
+               `<p>
+                    This is the content for the Second article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,
+               </p>
+               <p>
+                      This is the content for the Second article. Its more interesting, each and every one like this webapp from IIT ma,
+                      This the content for the first article. Its more interesting, each and every one like this webapp from IIT 
+                      madras,This is the content for the first article. Its more interesting.
+               </p>`
+    },
+  articleThree : {
+      title:'Article-Three josephine',
+       heading:'Article Three',
+       date:'Sep 15, 2016',
+       content:  
+               `<p>
+                    This is the content for the third article. Its more interesting, each and every one like this webapp from IIT 
+                    madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT 
+               </p>
+     },          
+      
+  
 
     function createTemplate (data){
         var title = data.title;
@@ -37,7 +62,7 @@ var articles = {
         <html>
            <head>
              <title>
-               ${title}
+                      ${title}
                </title>
                 <meta name="viewport" content="width=device-width, inital-scale=" />
                 <link href="/ui/style.css" rel="stylesheet" />
@@ -61,11 +86,8 @@ var articles = {
                           </div>
                       </body>  
                     </html>
-        
-        
-        
-        `;
-        return htmlTemplate;
+            `;
+   return htmlTemplate;
     }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
