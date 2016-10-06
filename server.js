@@ -71,7 +71,7 @@ var articles = {
                           <div class="container">
                                <div>
                           <div>
-                          <a  href="/">Home</a>
+                          <a href="/">Home</a>
                           </div>
                           <hr/>
                           <h3>
