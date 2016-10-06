@@ -6,20 +6,27 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne = {
-    title:'Article-One josephine',
-    heading:'Article One',
-    date:'Sep 5, 2016',
- content:  `<p>
-          This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,
-          </p>
-          <p>
-              This is the content for the first article. Its more interesting, each and every one like this webapp from IIT ma,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting.
+var articles = {
+         articleOne = {}
+            title:'Article-One josephine',
+            heading:'Article One',
+            date:'Sep 5, 2016',
+            content:  
+               `<p>
+                    This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,
                </p>
                <p>
-                   This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more interesting, each and every one like this webapp from IIT madras,This is the content for the first article. Its more intere
- </p>`
-};
+                      This is the content for the first article. Its more interesting, each and every one like this webapp from IIT ma,
+                      This the content for the first article. Its more interesting, each and every one like this webapp from IIT 
+                      madras,This is the content for the first article. Its more interesting.
+               </p>
+                <p>
+                           This is the content for the first article. Its more interesting, each and every one like this webapp from
+                           IIT madras,This is the content for the first article. Its more interesting, each and every one like this 
+                           webapp from IIT madras,This is the content for the first article. Its more intere
+              </p>`
+    },
+
 
     function createTemplate (data){
         var title = data.title;
