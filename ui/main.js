@@ -6,13 +6,13 @@ var element = document.getElementById('main-text'
 element.innerHTML = "New value" ;
 
 //move the image
-var image = document.getElementById('madi');
+var img = document.getElementById('madi');
 var marginLeft = 0;
-function moveRight(){
+function moveRight () {
     marginLeft = marginLeft + 10;
     madi.style.marginLeft = marginleft + 'px';
 }
-madi.onclick = function (){
+madi.onclick = function () {
     var interval = setInterval(moveRight, 100);
-    madi.style.marginRight = '100px';
+    
 };
