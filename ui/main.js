@@ -10,7 +10,7 @@ var image = document.getElementById('madi');
 var margin = 0;
 function moveRight(){
     marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginleft + 'px';
+    madi.style.marginLeft = marginleft + 'px';
 }
 madi.onclick = function (){
     var interval = setInterval(moveRight, 100);
