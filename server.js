@@ -125,9 +125,14 @@ app.get('/ui/madi.png', function (req, res) {
 var names = [];
 app.get('/submit-name', function(req, res) {
 // Get the name from the request
-var name; //TODO
+var name; // TODO
+
+
 names.push(name);
-res.send(names);
+
+
+
+res.send(names);// TODO
     
 });
 
