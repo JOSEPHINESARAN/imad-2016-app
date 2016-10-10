@@ -10,7 +10,7 @@ button.onclick = function (){
       // Take some action
       if (request.status === 200){
           var counter = request.responseText;
-           counter=counter+1;
+       
            alert(counter.toString());
          var spaan = document.getElementById('count');
  spaan.innerHTML = counter.toString(); 
