@@ -31,7 +31,7 @@ var submit = document.getElementById('submit_btn');
 submit.onclick = function [] {
     
       // Creat a request object
- var request = new XMLHttpRequest();
+ var request = new XMLHttpRequest;
  
   // Capture the response and store it in a variable
  request.onreadystatechange = function (){
