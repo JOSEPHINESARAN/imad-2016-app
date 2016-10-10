@@ -123,7 +123,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-name', function(req, res) { // URL: /submit
+app.get('/submit-name', function(req, res) { // URL: /submit-name?name=xxxxx
 // Get the name from the request
 var name = req.params.name;
 
