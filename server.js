@@ -131,7 +131,6 @@ var name = req.params.name;
 names.push(name);
 // JSON: Javascript Object Notation
 
-
 res.send(JSON.Stringify(names));
     
 });
