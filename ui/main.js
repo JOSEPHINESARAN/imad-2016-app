@@ -24,3 +24,5 @@ request.open('GET', 'http://josephinesaran.imad.hasura-app.io/counter', true);
 request.send(null);
  
 };
+//submit name
+var nameinput = document.getelementById()
