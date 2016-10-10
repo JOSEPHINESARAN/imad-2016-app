@@ -13,7 +13,7 @@ button.onclick = function (){
            counter=counter+1;
            alert(counter.toString());
          var spaan = document.getElementById('count');
- span.innerHTML = counter.toString(); 
+ spaan.innerHTML = counter.toString(); 
       }
   }
    // Not done yet  
