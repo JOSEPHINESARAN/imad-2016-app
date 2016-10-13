@@ -26,7 +26,7 @@ request.send(null);
 
 // Submit name
 var submit = document.getElementById('submit.btn');
-submit.onclick = function (){
+submit.onclick = function(){
     
       // Creat a request object
  var request = new XMLHttpRequest;
