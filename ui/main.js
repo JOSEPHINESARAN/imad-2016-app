@@ -24,9 +24,7 @@ for (var i=0; i list +=';
 ';
 }
 var ul = document.getElementById('namelist');
-ul.innerHTML = list{
-    
-};
+ul.innerHTML = list{}
 
 }
 // Not done yet
