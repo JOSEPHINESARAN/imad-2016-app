@@ -18,7 +18,7 @@ var names = JSON.parse(obj);
 var list =";" ;
     
 ';';
-for (var i=0; i list +=''
+for (var i=0; i list +=';
 
 ' + names[i] + '
 ';
