@@ -2,26 +2,29 @@
 var button = document.getElementById('counter');
 button.onclick = function (){
     
+};
+    
  // Creat a request object
- var request = new XMLHttpRequest;
+var request = new XMLHttpRequest();
 
 // Capture the response and store it in a variable
-request.onreadystatechange = function (){
-if (request.readyState === XMLHttpRequest.DONE) {
+request.onreadystatechange = function (){};
+if (request.readyState === XMLHttpRequest.DONE){}
 //Take some action
-if (request.status === 200){
+if(request.status === 200)
 //capture a list of names and render it as a list
 var obj = request.responseText;
 var names = JSON.parse(obj);
-var list = '';
-for (var i=0; i list +=');
+var list=";
+for(var i=0; i list +='
 
-' + names[i] + '
-'};
-
+ '+ names[i]+'
+',
+}
 var ul = document.getElementById('namelist');
-ul.innerHTML = list};
-};
+ul.innerHTML = list; 
+}
+}
 // Not done yet
 };
  
