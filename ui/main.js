@@ -25,7 +25,7 @@ request.send(null);
 };
 
 // Submit name
-var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit.btn');
 submit.onclick = function (){
     
       // Creat a request object
